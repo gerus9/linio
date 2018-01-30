@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Linio Demo</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="favorite">Favoritos</string>
+    <!-- Menu Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_favorite">@string/favorite</string>
+    <string name="nav_account">Cuenta</string>
 </resources>

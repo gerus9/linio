@@ -1,0 +1,9 @@
+<resources>
+    <style name="ToolbarTitle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/toolbar_title_size</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>
