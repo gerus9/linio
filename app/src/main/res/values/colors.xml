@@ -14,6 +14,8 @@
 
     <color name="colorBackground">@color/white_two</color>
 
+    <color name="colorFavoritesBackground">@color/white_two</color>
+
     <color name="colorButtomNavEnable">@color/white</color>
     <color name="colorButtomNavDisable">@color/white_two</color>
 

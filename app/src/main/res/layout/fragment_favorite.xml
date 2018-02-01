@@ -1,29 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/layout_no_internet"
     android:weightSum="1"
     android:orientation="vertical"
     android:background="@color/colorBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFavorites"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight=".8"
-        android:padding="30dp"
-        app:srcCompat="@drawable/nd_ic_fav_off_nav" />
-
-    <TextView
-        android:text="@string/app_name"
-        android:layout_weight=".2"
-        android:orientation="vertical"
-        android:textStyle="bold"
-        style="?android:textAppearanceMedium"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
