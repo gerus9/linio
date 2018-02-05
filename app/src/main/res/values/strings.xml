@@ -1,6 +1,23 @@
 <resources>
-    <string name="app_name">Linio Demo</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="add">Agregar</string>
+    <string name="app_name">Linio (Gerus)</string>
+    <string name="favorite">Favoritos</string>
+    <!-- Menu Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_favorite">@string/favorite</string>
+    <string name="nav_shopping">Carrito</string>
+
+    <string name="emptyCollection">Organiza tus productos favoritos y compártelos con tus amigos creando colecciones.</string>
+    <string name="createNewCollection">Crear colección</string>
+    <string name="emptyStateFavTitle">Aún no has agregado ningún producto a tus favoritos</string>
+    <string name="emptyStateFavDesc">Que esperas ve a buscar un producto para guardar aquí</string>
+    <string name="label_totalProdcts">Todos mis favoritos (%d)</string>
+
+    <!--Shopping -->
+    <string name="shoppingCartEmpty">Tu carrito de compras está vacío</string>
+    <string name="chooseOurProducts">Elige entre nuestra amplia\ngama de productos</string>
+
+    <!--Gerus -->
+    <string name="homeEmpty">Aplicación de prueba para Linio</string>
+    <string name="createdBy">Gerardo Guzmán Díaz</string>
 </resources>

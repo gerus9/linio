@@ -2,4 +2,63 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Space -->
+    <dimen name="space">1dp</dimen>
+    <dimen name="space_l">3dp</dimen>
+    <dimen name="space_m">5dp</dimen>
+    <dimen name="space_s">8dp</dimen>
+    <dimen name="space_xl">10dp</dimen>
+    <!-- Dialogs -->
+    <dimen name="dialog_progress_size">40dp</dimen>
+    <!-- Toolbar -->
+    <dimen name="toolbar_height">57dp</dimen>
+    <dimen name="toolbar_title_size">25sp</dimen>
+    <!-- Rounded -->
+    <dimen name="rounded_radio">6dp</dimen>
+    <!-- Product -->
+    <dimen name="product_badge">32dp</dimen>
+    <!-- Button -->
+    <dimen name="button_primary_radius">25dp</dimen>
+    <!-- Texts -->
+    <dimen name="text_l">16sp</dimen>
+    <dimen name="text_m">14sp</dimen>
+    <dimen name="text_s">12sp</dimen>
+    <dimen name="text_xl">18sp</dimen>
+    <dimen name="text_xs">11sp</dimen>
+    <dimen name="text_xxl">22sp</dimen>
+    <dimen name="text_xxs">9sp</dimen>
+    <dimen name="text_xxxhuge">45sp</dimen>
+    <dimen name="text_xxxl">28sp</dimen>
+    <dimen name="text_xxxs">10sp</dimen>
+    <dimen name="text_xxxxs">8sp</dimen>
+    <!-- Margins -->
+    <dimen name="margin_compact">6dp</dimen>
+    <dimen name="margin_huge">28dp</dimen>
+    <dimen name="margin_large">12dp</dimen>
+    <dimen name="margin_micro">1dp</dimen>
+    <dimen name="margin_mid">8dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_xlarge">16dp</dimen>
+    <dimen name="margin_xsmall">2dp</dimen>
+    <dimen name="margin_xxlarge">20dp</dimen>
+    <dimen name="margin_xhuge">32dp</dimen>
+    <dimen name="margin_xxxhuge">36dp</dimen>
+    <dimen name="margin_xxxlarge">24dp</dimen>
+    <dimen name="margin_xxxxhuge">44dp</dimen>
+    <!-- Size -->
+    <dimen name="size_small">16dp</dimen>
+    <dimen name="size_medium">24dp</dimen>
+    <dimen name="size_large">32dp</dimen>
+    <!-- Favorites -->
+    <dimen name="fav_container_width">174dp</dimen>
+    <dimen name="fav_container_height">120dp</dimen>
+    <dimen name="fav_large_image">100dp</dimen>
+    <dimen name="fav_small_image">46dp</dimen>
+
+    <!-- Custom Product -->
+    <dimen name="custom_product_size">174dp</dimen>
+
+    <!-- Custom Product -->
+    <dimen name="fav_empty_collection">202dp</dimen>
+
 </resources>

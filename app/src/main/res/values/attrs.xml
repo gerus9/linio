@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ProductView">
+        <attr name="pv_favorite" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CollectionFavorites">
+        <attr name="cf_default" format="boolean" />
+    </declare-styleable>
+
+</resources>

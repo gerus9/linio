@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LinerLayoutEmpty">
+
+    <ImageView
+        style="@style/ImageEmpty"
+        app:srcCompat="@drawable/nd_ic_empty_load" />
+
+    <TextView
+        style="@style/TextEmptyTitle"
+        android:text="@string/homeEmpty" />
+
+    <TextView
+        style="@style/TextEmptySubtitle"
+        android:text="@string/createdBy" />
+
+</LinearLayout>
