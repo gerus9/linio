@@ -8,9 +8,9 @@
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/toolbar_title"
+        style="@style/ToolbarTitle"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/ToolbarTitle" />
+        android:layout_height="wrap_content" />
 
 </android.support.v7.widget.Toolbar>
 
