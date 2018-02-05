@@ -10,13 +10,14 @@ import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.gerus.linio.fragments.AccountFragment;
-import com.gerus.linio.fragments.FavoriteFragment;
-import com.gerus.linio.fragments.HomeFragment;
+import com.gerus.linio.views.shopping.ShoppingFragment;
+import com.gerus.linio.views.favorites.FavoritesFragment;
+import com.gerus.linio.views.home.HomeFragment;
 
-public class GeneralActivity extends AppCompatActivity implements OnGeneralInterface {
+public class GeneralActivity extends AppCompatActivity {
     private Toolbar mToolbar;
     private AppCompatTextView mToolbarTitle;
+    private int IdLastFragment = 0;
 
     static {
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
@@ -27,7 +28,9 @@ public class GeneralActivity extends AppCompatActivity implements OnGeneralInter
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_general);
         initToolbar();
-        ((BottomNavigationView) findViewById(R.id.bottom_navigation)).setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        bottomNavigationView.findViewById(R.id.nav_home).performClick();
     }
 
     private void initToolbar() {
@@ -46,19 +49,22 @@ public class GeneralActivity extends AppCompatActivity implements OnGeneralInter
             switch (item.getItemId()) {
                 case R.id.nav_home:
                     voFragment = new HomeFragment();
-                    idTitle = R.string.nav_home;
+                    clearTitle();
                     break;
                 case R.id.nav_favorites:
-                    voFragment = new FavoriteFragment();
+                    voFragment = new FavoritesFragment();
                     idTitle = R.string.nav_favorite;
                     break;
-                case R.id.nav_account:
-                    voFragment = new AccountFragment();
-                    idTitle = R.string.nav_account;
+                case R.id.nav_shopping:
+                    voFragment = new ShoppingFragment();
+                    clearTitle();
                     break;
             }
-            prcChangeFragment(voFragment);
-            changeTitle(idTitle);
+            if(IdLastFragment!= item.getItemId()){
+                prcChangeFragment(voFragment);
+                changeTitle(idTitle);
+            }
+            IdLastFragment = item.getItemId();
             return true;
         }
     };
@@ -67,8 +73,11 @@ public class GeneralActivity extends AppCompatActivity implements OnGeneralInter
         if(poFragment!=null) getSupportFragmentManager().beginTransaction().replace(R.id.fragments, poFragment).commit();
     }
 
-    @Override
     public void changeTitle(int piTitle) {
-        mToolbarTitle.setText(piTitle);
+        if(piTitle!=0) mToolbarTitle.setText(piTitle);
+    }
+
+    public void clearTitle() {
+        mToolbarTitle.setText(null);
     }
 }
